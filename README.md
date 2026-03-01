@@ -16,6 +16,7 @@ Make sure you are in the `src` folder; in case you are not, just `cd src` into i
 ```
 python figure_1_table_2.py
 ```
+This will take a few seconds.
 
 Results are stored in the folder `src/results`:
 - `figure_1.png` is the boxplot in Figure 1.
@@ -30,6 +31,17 @@ Make sure you are in the folder `src`. In case you are not, just `cd src` into i
 ```
 python table_1.py
 ```
+This will take a few minutes.
 
 Results are stored in the folder `results`:
 - 'table_1.csv' contains the data for Table 1.
+
+# Reproduce the factorization of 2,313,177,834,509,145,607
+
+Make sure you are in the folder `src`. In case you are not, just `cd src` into it.
+```
+python factor_big_n.py
+```
+This will take a few days.
+
+
