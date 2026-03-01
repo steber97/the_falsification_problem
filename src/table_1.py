@@ -6,6 +6,9 @@ from factoring.solve_from_file import solve_from_file
 benchmark_folder = 'satlib'
 
 if __name__ == "__main__":
+    if "results" not in  os.listdir('.'):
+        os.mkdir('results/')
+    
     result_df = pd.DataFrame(columns=['name', 'time', 'clauses', 'variables'])
     for f in os.listdir(benchmark_folder):
         result, timer, clauses, variables = solve_from_file("{}/{}".format(benchmark_folder, f))
