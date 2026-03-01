@@ -11,4 +11,4 @@ if __name__ == "__main__":
         result, timer, clauses, variables = solve_from_file("{}/{}".format(benchmark_folder, f))
         result_df.loc[len(result_df)] = [f.replace('.cnf', ''), timer, clauses, variables]
         assert result is True
-    result_df.to_csv("results/satlib.csv")
+    result_df.to_csv("results/table_1.csv")
