@@ -28,8 +28,4 @@ def solve_from_file(file: str) -> Tuple[bool, float, int, int]:
     timer = time.time() - now
     assert result is not None
     result_bool: bool = result is True
-    clauses = solver.nof_clauses()
-    assert clauses is not None
-    vars = solver.nof_vars()
-    assert vars is not None
-    return result, timer, clauses, vars
+    return result, timer, len(cnf.clauses), cnf.nv

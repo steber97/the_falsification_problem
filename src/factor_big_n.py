@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     # Solve the FactoringCircuit with Glucose4
     cnf_g = cnf.to_glucose()
-    print("n={}, clauses={}, literals={}".format(g, len(cnf.clauses), cnf_g.nof_vars()))
+    print("n={}, clauses={}, literals={}".format(g, len(cnf.clauses), cnf.nv))
     now = time.time()
     solve = cnf_g.solve(assumptions=[map[c.get_output_gate().id]]) 
     total_time = time.time() - now

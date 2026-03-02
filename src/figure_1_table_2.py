@@ -58,12 +58,8 @@ def factor_number_with_glucose4(nbits: int) -> Tuple[float, int, int]:
         f1, f2 = c.getFactorsFromCnfAssignment(model, map)
         assert f1 == a or f1 == b
         assert f2 == a or f2 == b
-    
-    tot_variables = g.nof_vars()
-    tot_clauses = g.nof_clauses()
-    if not isinstance(tot_clauses, int) or not isinstance(tot_variables, int):
-        raise ValueError("The CNF formula has a wrong value of clauses or variables.")
-    return total_time, tot_clauses, tot_variables
+
+    return total_time, len(cnf.clauses), cnf.nv
 
 
 if __name__ == "__main__":
@@ -104,3 +100,5 @@ if __name__ == "__main__":
     plt.title("Glucose4 vs factoring instances")
     
     plt.savefig('results/figure_1.png', dpi=1000)
+
+    print("table_2.csv and figure_1.png have been saved in results/table_2.csv and results/figure_1.png.")
