@@ -16,7 +16,7 @@ Make sure you are in the `src` folder; in case you are not, just `cd src` into i
 ```
 python figure_1_table_2.py
 ```
-This will take a few seconds.
+The script is executed in a few seconds.
 
 Results are stored in the folder `src/results`:
 - `figure_1.png` is the boxplot in Figure 1.
@@ -42,6 +42,6 @@ Make sure you are in the folder `src`. In case you are not, just `cd src` into i
 ```
 python factor_big_n.py
 ```
-This will take a few days.
+The execution of the script will take a few days.
 
 
