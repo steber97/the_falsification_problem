@@ -80,7 +80,7 @@ if __name__ == "__main__":
     res_df.groupby(['nbits']).agg(
         time_avg=('time', 'mean'),
         time_std=('time', 'std'),
-        variables_avg=('time', 'mean'),
+        variables_avg=('variables', 'mean'),
         variables_std=('variables', 'std'),
         clauses_avg=('clauses', 'mean'),
         clauses_std=('clauses', 'std')).to_csv("results/table_2.csv")
