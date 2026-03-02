@@ -1,4 +1,4 @@
-# the_falsification_problem
+# The falsification problem: how hard is it to falsify heuristics?
 Repository used in order to produce the experiments in Appendix F of the paper "The falsification problem: how hard is it to falsify heuristics?", submitted at ISCO 2026.
 
 ## Install dependencies
@@ -33,8 +33,8 @@ python table_1.py
 ```
 This will take a few seconds.
 
-Results are stored in the folder `results`:
-- 'table_1.csv' contains the data for Table 1.
+Results are stored in the folder `src/results`:
+- `table_1.csv` contains the data for Table 1.
 
 # Reproduce the factorization of 2,313,177,834,509,145,607
 
