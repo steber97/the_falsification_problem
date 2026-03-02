@@ -5,8 +5,7 @@ from factoring.factoring_circuit import FactoringCircuit
 
 
 if __name__ == "__main__":
-    # TODO: add factorization!
-    # This is the product of {} {} 
+    # This is the product of 1,615,770,229 and 1,431,625,483 
     g = 2313177834509145607
     c = FactoringCircuit(g)
     
